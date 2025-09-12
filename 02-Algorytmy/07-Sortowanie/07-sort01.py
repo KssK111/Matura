@@ -1,0 +1,2 @@
+# Sortowanie przez wybór
+

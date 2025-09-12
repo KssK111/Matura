@@ -1,0 +1,1 @@
+# Sortowanie liniowe lub binarne
