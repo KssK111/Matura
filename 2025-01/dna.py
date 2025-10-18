@@ -56,7 +56,7 @@ def dlugosc_najdluzszy_wspolny(n: int, dna1: str, dna2: str) -> int:
         else: najdluzszy_wspolny_teraz = 0
         index += 1
     return najdluzszy_wspolny
-[print(f"n = {len(dna1)}, {dna1}, {dna2}Wynik = {dlugosc_najdluzszy_wspolny(len(dna1), dna1, dna2)}")
+[print(f"n = {len(dna1)}, {dna1}, {dna2}, Wynik = {dlugosc_najdluzszy_wspolny(len(dna1), dna1, dna2)}")
     for dna1, dna2 in [
         ("TAAAATCAAAAAAACGTG", "ATGAATCATTGAAAAAAA"),
         ("GTAGGATATTAT", "AATATTGGAGTG"),
