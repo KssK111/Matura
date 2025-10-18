@@ -1,0 +1,21 @@
+Idn-la;Nazwisko;Imie;specjalnosc;przedmiot_nauczany
+1;Liœæ;Antoni;romanista;j.francuski
+2;Kwiatek;Genowefa;germanista;j.niemiecki
+3;Owoc;Monika;romanista;j.francuski
+4;Dynia;Eustachy;germanista;j.niemiecki
+5;Pelargonia;Onufry;romanista;j.francuski
+6;Trawa;Wincenty;germanista;j.niemiecki
+7;Gruszka;Waleria;romanista;j.francuski
+8;Œliwka;Franciszek;³acinnik;j.³aciñski
+9;Wiœnia;Aurelia;³acinnik;j.³aciñski
+10;Chryzantema;Karol;wf;wychowanie fizyczne
+11;Odorans;Krzysztof;wf;wychowanie fizyczne
+12;Agrest;Hildegarda;wf;wychowanie fizyczne
+13;Cukinia;Apolonia;wf;wychowanie fizyczne
+14;Kapusta;Jan;geograf;geografia
+15;Kalafior;Anna;geograf;geografia
+16;Brukselka;Adam;historyk;historia
+17;Szczaw;Jêdrzej;iberysta;j.hiszpañski
+18;£odyga;Sebastian;iberysta;j.hiszpañski
+19;Korzeñ;Anastazja;iberysta;j.hiszpañski
+20;S³onecznik;Marek;historyk;historia
