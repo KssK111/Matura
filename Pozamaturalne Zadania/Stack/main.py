@@ -2,12 +2,12 @@ from typing import Any
 
 class Stack:
     def __init__(self, values: list[Any] = []):
-        self.values = values
+        self.__values = values
     def push(self, value):
-        self.values.append(value)
+        self.__values.append(value)
 
     def pop(self) -> Any:
-        return self.values.pop()
+        return self.__values.pop()
 
     def is_empty(self) -> bool:
         return bool(self)
@@ -22,5 +22,5 @@ stos.push(8)
 
 # stos.pop()
 # stos.pop()
-print(stos.values[1])
+print(stos.__values[1])
 print(stos.pop())
