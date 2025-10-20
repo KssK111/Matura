@@ -7,14 +7,8 @@ def ciag_keith_k(k: int) -> list[int]:
 def is_keith(k: int) -> bool:
     return k in ciag_keith_k(k)
 
-liczby = [197, 12, 14, 109]
-list(map(lambda x: print(f"{x} - {is_keith(x)} - {ciag_keith_k(x)}"), liczby))
-
-"""
-Keith rekurencyjny dla 742
-keith(n) =
-    { 7, n = 1
-    { 4, n = 2
-    { 2, n = 3
-    { keith(n - 1) + keith(n - 2) + keith(n - 3), n >= 4
-"""
+plik = "liczby.txt"
+with open(plik) as file:
+    wynik = filter(is_keith, map(int, filter(bool, map(str.strip, file.readlines()))))
+test = False
+[print(f"{liczba}" + (f" - {ciag_keith_k(liczba)}" if test else "")) for liczba in wynik]
