@@ -1,5 +1,5 @@
 from itertools import starmap, repeat
-plik = "anomalie.txt"
+plik = "anomalie_przyklad.txt"
 
 print("6.1")
 def czy_posortowana(lista: list[int]) -> bool:
@@ -29,5 +29,9 @@ for wiersz in wiersze:
 wynik_bin = int(wynik_bin)
 #print(wynik_bin)
 wynik_bin &= int("".join(repeat("1", 30)), 2)
-
 print(f"Bin = {bin(wynik_bin)[2:]}\nDec = {wynik_bin}")
+
+print("\n6.3")
+with open(plik) as file:
+    wiersze = list(map(lambda x: list(map(int, x)), map(str.split, filter(bool, map(str.strip, file.readlines())))))
+raise NotImplementedError
