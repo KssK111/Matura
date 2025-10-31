@@ -1,0 +1,12 @@
+6.1
+Najjaśniejszy = 221
+Najciemniejszy = 7
+
+6.2
+Najmniejsza ilość wierszy którą należy ununąć = 149
+
+6.3
+Ilość pikseli które mają kontrastującego sąsiada = 753
+
+6.4
+Najdluższa linia = 5
