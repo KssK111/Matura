@@ -1,0 +1,51 @@
+przedmiot_id;nazwa;cena_wywolawcza;wlasciciel_id
+1;Laptop Dell Inspiron;2500;1
+2;Smartfon Samsung Galaxy;1800;13
+3;Imbryk do herbaty porcelanowy;120;24
+4;Sluchawki bezprzewodowe Sony;450;60
+5;Tablet Apple iPad;1900;82
+6;Konsola PlayStation 5;2000;82
+7;Kamera GoPro Hero;1500;83
+8;Rower gorski Trek;2200;1
+9;Zegarek Casio G-Shock;600;13
+10;Drukarka HP LaserJet;750;24
+11;Gitara akustyczna Yamaha;900;60
+12;Kurtka zimowa North Face;700;66
+13;Robot sprzatajacy Roomba;1500;82
+14;Ekspres do kawy DeLonghi;1100;82
+15;Monitor LG UltraWide;1200;1
+16;Obiektyw Canon 50mm;950;13
+17;Mikrofalowka Samsung;500;24
+18;Telewizor LG OLED 55;4200;60
+19;Hulajnoga elektryczna Xiaomi;1700;66
+20;Kask rowerowy Giro;300;82
+21;Odkurzacz Philips;800;83
+22;Torba podrozna Samsonite;650;13
+23;Ksiazka - Wladca Pierscieni;120;13
+24;Lozko drewniane 160x200;2200;24
+25;Biurko gamingowe;1000;24
+26;Fotel obrotowy;850;66
+27;Okulary przeciwsloneczne Ray-Ban;500;82
+28;Powerbank Anker 20000mAh;250;83
+29;Kamera Nikon D3500;2100;1
+30;Projektor multimedialny Epson;2400;13
+31;Wiertarka Bosch;600;24
+32;Zmywarka Bosch;2300;60
+33;Gra planszowa Catan;180;66
+34;Konsola Xbox Series X;2800;82
+35;Laptop Apple MacBook Air;4500;83
+36;Torba fotograficzna Lowepro;400;13
+37;Sluchawki Apple AirPods;900;13
+38;Drukarka 3D Creality;3200;24
+39;Kask narciarski Atomic;450;60
+40;Ladowarka indukcyjna Samsung;150;82
+41;Mysz bezprzewodowa Logitech;200;82
+42;Klawiatura mechaniczna Razer;450;83
+43;Buty sportowe Nike Air Max;500;1
+44;Plecak turystyczny Deuter;700;13
+45;Tablet graficzny Wacom;1600;24
+46;Suszarka do wlosow Philips;300;60
+47;Zestaw garnkow Tefal;600;82
+48;Smartwatch Apple Watch;2000;82
+49;Grill elektryczny Tefal;850;83
+50;Imbryk zelazny japonski;250;1
