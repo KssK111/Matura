@@ -3,7 +3,12 @@ def stopnie_i_wielomiany(plik: str) -> list[tuple[int, list[int]]]:
         file = filter(bool, map(str.strip, file))
         file = map(lambda x: (int(x[0]), list(map(int, x[1:]))), map(str.split, file))
         return list(file)
-    
+
+"""
+with open("wielomiany.txt") as file: st_w = list(map(lambda x: (int(x[0]), list(map(int, x[1:]))), (map(str.split, filter(bool, map(str.strip, file))))))
+stopnie_i_wielomiany = lambda plik: list(map(lambda x: (int(x[0]), list(map(int, x[1:]))), map(str.split, filter(bool, map(str.strip, open(plik))))))
+"""
+  
 def roznica(n: int) -> int:
     return abs((n * (n + 1) // 2) - n)
 
