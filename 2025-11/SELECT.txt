@@ -1,0 +1,11 @@
+SELECT
+p.przedmiot_id,
+p.nazwa,
+p.cena_wywolawcza,
+MAX(lic.kwota) AS "Maksymalna",
+MAX(lic.kwota - p.cena_wywolawcza) AS "Roznica"
+FROM Przedmioty p
+INNER JOIN oferty AS licz ON p.przedmiot_id = lic.przedmiot_id
+GROUP BY p.przedmiot_id,
+p.nazwa,
+p.cena_wywolawcza;
