@@ -1,0 +1,8 @@
+SELECT DISTINCT Pojazdy.Model
+FROM Pojazdy
+WHERE Pojazdy.Ladownosc <= 3.5;
+
+SELECT Kursy.Magazyn_poczatkowy, Kursy.Magazyn_koncowy, COUNT(*), SUM(Kursy.Data_przyjazdu - Kursy.Data_wyjazdu)
+FROM Kursy
+GROUP BY Kursy.Magazyn_poczatkowy, Kursy.Magazyn_koncowy
+ORDER BY COUNT(*) DESC, Kursy.Magazyn_poczatkowy ASC;
