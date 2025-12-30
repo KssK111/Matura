@@ -1,0 +1,68 @@
+SELECT s.nazwa, s.nr_skladu
+FROM sklady s
+WHERE NOT EXISTS
+(
+SELECT DISTINCT sklady.nazwa, składy.nr_skladu
+FROM przejazdy p
+JOIN składy ON składy.nr_skladu = pryjazdy.nr_skladu
+);
+
+SELECT bilety.nr_biletu
+FROM bilety
+WHERE bilety.nr_przejazdu = 504
+ORDER BY bilety.ilosc DESC;
+
+SELECT COUNT(DISTINCT sklady.lokomotywa)
+FROM sklady;
+
+SELECT bilety.nr_przejazdu
+FROM BILETY
+ORDER BY bilety.cena * bilety.ilosc * (1 - bilety.ulga) DESC
+LIMIT 1;
+
+SELECT przejazdy.stacja_pocz
+FROM przejazdy
+JOIN bilety on bilety.nr_przejazdu = przejazdy.nr_przejazdu
+GROUP BY przejazdy.stacja_pocz
+ORDER BY SUM(bilety.ilosc) DESC
+LIMIT 1;
+
+SELECT przejazdy.nr_przejazdu, (przejazdy.przy - przejazdy.wyj) AS "Czas"
+FROM przejazdy
+ORDER BY (przejazdy.przy - przejazdy.wyj) DESC
+LIMIT 1;
+
+SELECT przejazdy.nr_przejazdu
+FROM przejazdy
+WHERE NOT EXISTS
+(
+SELECT bilety.nr_przejazdu
+FROM bilety
+);
+
+SELECT sklady.lokomotywa, przejazdy.data, COUNT(przejazdy.nr_skladu) AS "Ile razy"
+FROM sklady
+JOIN przejazdy ON przejazdy.nr_skladu = sklady.nr_skladu
+GROUP BY przejazdy.data
+ORDER BY COUNT(przejazdy.nr_skladu) DESC
+LIMIT 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

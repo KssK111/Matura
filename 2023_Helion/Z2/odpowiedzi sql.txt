@@ -1,0 +1,16 @@
+SELECT Pacjenci.IMIE, Pacjenci.NAZWISKO
+FROM Pacjenci
+JOIN Pobyty ON Pacjenci.PESEL = Pobyty.PESEL
+WHERE Pacjenci.WOJEWODZTWO = "wielkopolskie" AND Pobyty.NFZ = 1 AND Pobyty.LICZBA_TYGODNI >= 2;
+
+SELECT Pacjenci.PESEL, Pacjenci.IMIE, Pacjenci.NAZWISKO
+FROM Pacjenci
+WHERE LEFT(Pacjenci.PESEL, 2) < 80 AND LEN(Pacjenci.IMIE) AND Pacjenci.NAZWISKO LIKE "%a" AND MOD(LEFT(RIGHT(Pacjenci.PESEL, 2), 1),2) = 0;
+
+SELECT *
+FROM Pacjenci
+WHERE NOT EXISTS
+(
+SELECT Pobyty.PESEL
+FROM Pobyty
+);
