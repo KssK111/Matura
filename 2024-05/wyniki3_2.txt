@@ -1,0 +1,2 @@
+max = 28422
+ilość bez skrótu = 18
