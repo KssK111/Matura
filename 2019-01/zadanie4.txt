@@ -1,0 +1,12 @@
+4.1
+942
+
+4.2
+Numer - 812
+Punkty - 265
+
+4.3
+Najdłuższy ciąg prawo lewo
+15
+Numery graczy z ciągiem o takiej długości
+774
