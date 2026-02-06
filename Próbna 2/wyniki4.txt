@@ -1,0 +1,14 @@
+4.1
+Max pole = 1545605418
+Min pole = 10425
+
+4.2
+Długość = 9
+h = 1001
+s = 627
+
+4.3
+Max szerokość dla _ prostokątów:
+2: 79372
+3: 112789
+5: 180079
