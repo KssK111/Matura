@@ -1,0 +1,22 @@
+8.1
+177
+
+8.2
+wymiana plynu chłodniczego - 29 razy
+marka
+bmw
+daewoo
+honda
+kia
+lancia
+mazda
+nissan
+saab
+volkswagen
+
+8.3
+
+8.4
+miesiąc	przychód
+11	150530
+12	105860
