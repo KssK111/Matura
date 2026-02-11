@@ -30,3 +30,14 @@ Największy = 100, 7 razy
 15:00	43	7	5
 15:01	95	25	8
 15:02	89	17	7
+
+6.3
+Godzina	Jedzenie	Drewno	Zloto
+Dziesiąta	3212	1030	295
+Jedenasta	3271	1163	328
+Dwunasta	2982	1146	306
+
+6.4
+Nie odbył się 131 razy
+Przekazane Jedzenie 33030
+
