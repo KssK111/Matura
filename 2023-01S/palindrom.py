@@ -1,18 +1,14 @@
-def pobierz_slowa(plik: str) -> list[str]:
-    with open(plik) as f:
-        return list(map(str.strip, f.readlines()))
+with open("slowa.txt") as f:
+    slowa = list(map(str.strip, f.readlines()))
 
-plik = "slowa.txt"
-slowa = pobierz_slowa(plik)
-palindromy = list(filter(lambda x: x == "".join(reversed(x)), slowa))
+palindromy = list(filter(lambda s: s == "".join(reversed(s)), slowa))
+print(f"4.1\nIlość palindromów: {len(palindromy)}")
 
-print(f"Ilość palindromów = {len(palindromy)}")
-
-ilosc_rodzin = len(set(map(len, palindromy)))
-print(f"Ilość rodzin = {ilosc_rodzin}")
+print(f"4.2\nIlość rodzin: {len(set(map(len, palindromy)))}")
 
 from collections import defaultdict
 rodziny = defaultdict(list[str])
-list(map(lambda x: rodziny[len(x)].append(x), palindromy))
-x = list(map(sorted, rodziny.values()))
-print(x)
+[rodziny[len(x)].append(x) for x in palindromy]
+
+with open("rodziny.txt", "w") as f:
+    f.write("\n".join(map(lambda r: " ".join(sorted(r)), rodziny.values())))
