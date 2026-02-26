@@ -31,7 +31,7 @@ def przetworz_miesiac_dzien(md: tuple[int, int]):
     x = ceil(d / 10)
     x = 3 if x == 4 else x
     return x + (3 if m == 8 else 0)
-wypadki_pow_okres = list(map(lambda w: (w[0], przetworz_miesiac_dzien([int(x) for x in w[1][-4:].split("-")])), wypadki))
+wypadki_pow_okres = list(map(lambda w: (w[0], przetworz_miesiac_dzien(tuple(int(x) for x in w[1][-4:].split("-")))), wypadki)) # pyright: ignore[reportArgumentType]
 stworz_pomiar_okresow = lambda: dict((map(lambda o: (o, 0), range(1, 6 + 1))))
 powiaty_okresy_ilosc = defaultdict(stworz_pomiar_okresow)
 for powiat, okres in wypadki_pow_okres:

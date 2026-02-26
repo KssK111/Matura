@@ -1,6 +1,6 @@
 def pobierz_prostokaty(plik: str) -> list[tuple[int, int]]:
     with open(plik) as f:
-        return list(map(lambda x: tuple(map(int, x.split())), filter(bool, map(str.strip, f.readlines()))))
+        return list(map(lambda x: tuple(map(int, x.split())), filter(bool, map(str.strip, f.readlines())))) # pyright: ignore[reportReturnType]
 
 plik = "prostokaty.txt"
 prostokaty = pobierz_prostokaty(plik)
