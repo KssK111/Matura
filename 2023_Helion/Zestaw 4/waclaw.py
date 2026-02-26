@@ -34,9 +34,11 @@ def raport(pole: list[list[int]]) -> Iterator[str]:
             for s in range(ile_s_w_wierszu):
                 sektory.append([wiersz[s] for wiersz in podzielone_wiersze[start:koniec]])
         srednie_sektorow = [srednia_pola(sek) for sek in sektory]
-        [print(sr, se) for sr, se in zip(srednie_sektorow, sektory)]
+        # [print(sr, se) for sr, se in zip(srednie_sektorow, sektory)]
         yield wzor_r(len(sektory), min_sr := min(srednie_sektorow), srednie_sektorow.index(min_sr) + 1)
         i += 1
 
 for r in raport(pole_waclawa):
     print(r)
+
+[print(w[0:8]) for w in pole_waclawa[0:8]]
