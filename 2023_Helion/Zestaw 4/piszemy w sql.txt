@@ -1,0 +1,15 @@
+Wypisz nazwy wszystkich marek sprzętu, który można wypożyczyć
+SELECT DISTINCT MARKA
+FROM SPRZET;
+
+W którym roku wyprodukowano najnowszy sprzęt dostępny w wypożyczalni? Ile jest sztuk 
+narzędzi z tego roku?
+SELECT ROK_PRODUKCJI, COUNT(ROK_PRODUKCJI) AS LICZBA_SZTUK
+FROM SPRZET
+ORDER BY ROK_PRODUKCJI DESC
+LIMIT 1
+
+Dla każdego sprzętu podaj kwotę, która wpłynęła do wypożyczalni z tytułu jego wszyst
+kich wypożyczeń. Zestawienie posortuj malejąco według kwot. 
+SELECT NAZWA, SUM(DATEDIFF(DATA_DO, DATA_OD) * KOSZT_NA_DZIEN) AS LACZNA_KWOTA
+FROM 
