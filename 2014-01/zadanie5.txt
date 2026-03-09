@@ -1,0 +1,6 @@
+a)
+Ile % 150	Ile % 200	Ile % 250
+5,4%	4,4%	0,0%
+b)
+Max na osobę	Min na osobę
+2243	112,6666667
