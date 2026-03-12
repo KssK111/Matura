@@ -4,3 +4,8 @@ Ile % 150	Ile % 200	Ile % 250
 b)
 Max na osobę	Min na osobę
 2243	112,6666667
+d)
+Ile dziewczyn pobiera	Ile chłopców pobiera
+17	32
+e)
+5
