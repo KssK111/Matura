@@ -22,5 +22,10 @@ print(f"d)\n{len(list(filter(suma_cyfr_parz_w_od_42, telefony)))}")
 
 def min_4_1(tel: str) -> bool:
     return len(list(filter(lambda l: l == "1", tel))) >= 4
+print(f"e)\n{len(list(filter(min_4_1, telefony)))}")
 
+def ostatnia2_mediana_podzielna3(tel: str) -> bool:
+    mediana = tel[4]
+    return tel[-1] == "2" and int(mediana) % 3 == 0
+print(f"f)\n{len(list(filter(ostatnia2_mediana_podzielna3, telefony)))}")
 
